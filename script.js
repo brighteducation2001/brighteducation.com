@@ -96,9 +96,9 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      const text = `Naya Admission Enquiry - Bright Classes%0A%0A` +
-        `Naam: ${encodeURIComponent(name)}%0A` +
-        `Contact No: ${encodeURIComponent(phone)}%0A` +
+      const text = `New Admission Enquiry - Bright School & Jr. College%0A%0A` +
+        `Name: ${encodeURIComponent(name)}%0A` +
+        `Contact Number: ${encodeURIComponent(phone)}%0A` +
         `Class/Course: ${encodeURIComponent(cls)}%0A` +
         (message ? `Message: ${encodeURIComponent(message)}%0A` : '');
 
