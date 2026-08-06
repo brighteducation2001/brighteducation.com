@@ -1,0 +1,156 @@
+<!DOCTYPE html> <!-- Declares the document type as HTML5 so the browser renders it correctly -->
+<html> <!-- The root tag that wraps all HTML content on the page -->
+
+<head> <!-- Contains metadata and page settings that are not displayed directly on the webpage -->
+    <title>Advanced Student Registration Form</title> <!-- Sets the text shown on the browser tab -->
+</head>
+
+<body> <!-- Contains all the visible content displayed to the user -->
+
+    <h2>Advanced Student Registration Form</h2> <!-- Level 2 heading tag used for section titles -->
+
+    <form> <!-- Defines an HTML form used to collect user inputs for submission -->
+
+        <!-- Personal Information Section -->
+        <fieldset> <!-- Groups related form controls together visually with a border -->
+            <legend>Personal Information</legend> <!-- Defines a visible caption/title for the fieldset container -->
+
+            <label>Full Name:</label><br> <!-- Displays text describing the input; <br> inserts a line break -->
+            <input type="text" placeholder="Enter Full Name" required minlength="3" maxlength="30">
+            <!-- type="text": Single-line text input field -->
+            <!-- placeholder: Displays temporary grey hint text inside the field -->
+            <!-- required: Prevents form submission if left empty -->
+            <!-- minlength/maxlength: Restricts character length between 3 and 30 -->
+            <br><br> <!-- Adds vertical space using two line breaks -->
+
+            <label>Email:</label><br>
+            <input type="email" placeholder="Enter Email" required>
+            <!-- type="email": Input field that automatically validates for proper email syntax (e.g., user@domain.com) -->
+            <br><br>
+
+            <label>Password:</label><br>
+            <input type="password" placeholder="Minimum 8 Characters" minlength="8" required>
+            <!-- type="password": Masks typed characters with dots or asterisks for security -->
+            <br><br>
+
+            <label>Phone Number:</label><br>
+            <input type="tel" placeholder="9876543210" pattern="[0-9]{10}" required>
+            <!-- type="tel": Specifically meant for telephone numbers -->
+            <!-- pattern="[0-9]{10}": Uses Regular Expressions (RegEx) to strictly enforce exactly 10 numeric digits -->
+            <br><br>
+
+            <label>Date of Birth:</label><br>
+            <input type="date" required>
+            <!-- type="date": Generates an interactive date picker calendar control -->
+            <br><br>
+
+        </fieldset>
+
+        <br>
+
+        <!-- Academic Information Section -->
+        <fieldset>
+            <legend>Academic Details</legend>
+
+            <label>Roll Number:</label><br>
+            <input type="number" min="1" max="500">
+            <!-- type="number": Restricts input to numeric values only -->
+            <!-- min="1" max="500": Sets allowed minimum and maximum numerical ranges -->
+            <br><br>
+
+            <label>Department:</label><br>
+            <input list="dept"> <!-- Connects this text input to a <datalist> using its matching ID -->
+            <datalist id="dept"> <!-- Provides a pre-defined auto-suggest dropdown list while keeping the field editable -->
+                <option value="Computer Science"> <!-- Individual selectable option inside datalist -->
+                <option value="Information Technology">
+                <option value="Mechanical">
+                <option value="Civil">
+                <option value="Electrical">
+            </datalist>
+            <br><br>
+
+            <label>Current Semester:</label><br>
+            <input type="range" min="1" max="8">
+            <!-- type="range": Renders a draggable slider control within a minimum (1) and maximum (8) range -->
+            <br><br>
+
+        </fieldset>
+
+        <br>
+
+        <!-- Extra Details Section -->
+        <fieldset>
+            <legend>Extra Information</legend>
+
+            <label>Upload Profile Photo:</label><br>
+            <input type="file" accept="image/*">
+            <!-- type="file": Renders a file chooser button to upload documents or images -->
+            <!-- accept="image/*": Restricts selection strictly to image file formats (.png, .jpg, etc.) -->
+            <br><br>
+
+            <label>Favourite Color:</label><br>
+            <input type="color">
+            <!-- type="color": Displays a color picker interface to select a HEX color code -->
+            <br><br>
+
+            <label>Website:</label><br>
+            <input type="url" placeholder="https://example.com">
+            <!-- type="url": Validates that input is structured as a proper web URL (e.g., https://...) -->
+            <br><br>
+
+            <label>Preferred Time:</label><br>
+            <input type="time">
+            <!-- type="time": Renders a time selector control (Hours and Minutes) -->
+            <br><br>
+
+            <label>Joining Month:</label><br>
+            <input type="month">
+            <!-- type="month": Renders a month and year selector control -->
+            <br><br>
+
+            <label>Search Course:</label><br>
+            <input type="search" placeholder="Search Course">
+            <!-- type="search": Input field styled specifically for search terms, usually includes a quick 'X' clear button -->
+            <br><br>
+
+        </fieldset>
+
+        <br>
+
+        <!-- Readonly Field -->
+        <label>Student ID:</label><br>
+        <input type="text" value="STU2026001" readonly>
+        <!-- readonly: Prevents user modification, but the value IS still submitted along with the form -->
+        <br><br>
+
+        <!-- Disabled Field -->
+        <label>College Name:</label><br>
+        <input type="text" value="ABC College" disabled>
+        <!-- disabled: Completely deactivates the input (greyed out) and does NOT submit its value with the form -->
+        <br><br>
+
+        <!-- Multi-line Text Area -->
+        <label>Address:</label><br>
+        <textarea rows="4" cols="40" placeholder="Enter Address"></textarea>
+        <!-- <textarea>: Allows multi-line text input -->
+        <!-- rows="4" cols="40": Defines height (number of text lines) and width (character length) -->
+        <br><br>
+
+        <!-- Checkbox -->
+        <input type="checkbox" required>
+        <!-- type="checkbox": Creates a square toggle box for agreement/selection -->
+        I agree to the Terms & Conditions
+        <br><br>
+
+        <!-- Action Buttons -->
+        <input type="submit" value="Register">
+        <!-- type="submit": Creates a button that submits form data to the server -->
+        
+        <input type="reset" value="Reset">
+        <!-- type="reset": Creates a button that clears all fields back to default empty states -->
+
+    </form>
+
+</body>
+
+</html>

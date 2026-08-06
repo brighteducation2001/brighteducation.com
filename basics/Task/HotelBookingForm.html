@@ -1,0 +1,162 @@
+<!--
+Guest Name
+Email
+Phone Number
+Check-in Date
+Check-out Date
+Number of Adults
+Number of Children
+Room Type
+Meal Preference
+Special Requests
+Identity Proof Upload
+Payment Method
+Coupon Code
+Terms & Conditions
+Book Now
+-->
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hotel Room Booking Form</title>
+</head>
+
+<body>
+
+    <h2>Hotel Room Booking Form</h2>
+
+    <!-- Form for submitting hotel room booking details -->
+    <form action="#" method="post" autocomplete="on">
+
+        <!-- Guest Details Section -->
+        <fieldset>
+            <legend>Guest Information</legend>
+
+            <!-- Guest Name field with autofocus to automatically highlight on load -->
+            <label>Guest Name:</label><br>
+            <input type="text" name="guest_name" placeholder="Enter Full Name" required minlength="3" maxlength="50" autofocus>
+            <br><br>
+
+            <!-- Email address field -->
+            <label>Email:</label><br>
+            <input type="email" name="email" placeholder="example@gmail.com" required>
+            <br><br>
+
+            <!-- Phone number field restricted to 10 numerical digits using pattern -->
+            <label>Phone Number:</label><br>
+            <input type="tel" name="phone" placeholder="10 Digit Mobile Number" pattern="[0-9]{10}" required>
+            <br><br>
+
+            <!-- Identity Proof File Upload restricted to image formats and PDF files -->
+            <label>Identity Proof Upload (Aadhar / Passport / Driving License):</label><br>
+            <input type="file" name="id_proof" accept="image/*, .pdf" required>
+            <br><br>
+
+        </fieldset>
+
+        <br>
+
+        <!-- Stay Details Section -->
+        <fieldset>
+            <legend>Booking & Stay Details</legend>
+
+            <!-- Check-in Date field -->
+            <label>Check-in Date:</label><br>
+            <input type="date" name="checkin_date" required>
+            <br><br>
+
+            <!-- Check-out Date field -->
+            <label>Check-out Date:</label><br>
+            <input type="date" name="checkout_date" required>
+            <br><br>
+
+            <!-- Number of Adults (minimum 1, maximum 10) -->
+            <label>Number of Adults:</label><br>
+            <input type="number" name="adults" min="1" max="10" value="1" required>
+            <br><br>
+
+            <!-- Number of Children (minimum 0, maximum 10) -->
+            <label>Number of Children:</label><br>
+            <input type="number" name="children" min="0" max="10" value="0">
+            <br><br>
+
+            <!-- Room Type input with datalist providing auto-suggest options -->
+            <label>Room Type:</label><br>
+            <input list="roomTypes" name="room_type" placeholder="Select or type Room Type" required>
+            <datalist id="roomTypes">
+                <option value="Single Room">
+                <option value="Double Room">
+                <option value="Deluxe Suite">
+                <option value="Executive Suite">
+                <option value="Presidential Suite">
+            </datalist>
+            <br><br>
+
+            <!-- Meal Preference selection using datalist options -->
+            <label>Meal Preference:</label><br>
+            <input list="mealOptions" name="meal_preference" placeholder="Select Meal Plan">
+            <datalist id="mealOptions">
+                <option value="No Meal (Room Only)">
+                <option value="Breakfast Included">
+                <option value="Half Board (Breakfast & Dinner)">
+                <option value="Full Board (All Meals)">
+            </datalist>
+            <br><br>
+
+        </fieldset>
+
+        <br>
+
+        <!-- Payment & Additional Details Section -->
+        <fieldset>
+            <legend>Payment & Preferences</legend>
+
+            <!-- Special Requests multi-line text input field -->
+            <label>Special Requests:</label><br>
+            <textarea name="special_requests" rows="4" cols="40" placeholder="Any specific requirements (e.g., high floor, airport pickup)..."></textarea>
+            <br><br>
+
+            <!-- Payment Method options via list selection -->
+            <label>Payment Method:</label><br>
+            <input list="paymentMethods" name="payment_method" placeholder="Select Payment Method" required>
+            <datalist id="paymentMethods">
+                <option value="Credit Card">
+                <option value="Debit Card">
+                <option value="Net Banking">
+                <option value="UPI">
+                <option value="Pay at Hotel">
+            </datalist>
+            <br><br>
+
+            <!-- Coupon Code search input field -->
+            <label>Coupon Code:</label><br>
+            <input type="search" name="coupon_code" placeholder="Enter Coupon Code">
+            <br><br>
+
+        </fieldset>
+
+        <br>
+
+        <!-- Terms & Conditions checkbox agreement -->
+        <input type="checkbox" name="terms" required>
+        I accept the Terms & Conditions
+        <br><br>
+
+        <!-- Submission and reset buttons -->
+        <button type="submit">Book Now</button>
+        <button type="reset">Reset Form</button>
+
+    </form>
+
+</body>
+
+</html>

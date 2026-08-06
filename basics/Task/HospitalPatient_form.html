@@ -1,0 +1,177 @@
+<!--Patient Name
+Age
+Gender
+Blood Group
+Phone Number
+Email
+Address
+Emergency Contact
+Appointment Date
+Appointment Time
+Department
+Doctor Preference
+Existing Disease
+Medical Report Upload
+Insurance Available (Yes/No)
+Terms & Conditions
+Submit / Reset
+-->
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hospital Patient Registration Form</title>
+</head>
+
+<body>
+
+    <h2>Hospital Patient Registration Form</h2>
+
+    <!-- Form container configured to process data via POST method -->
+    <form action="#" method="post" autocomplete="on">
+
+        <!-- Section 1: Patient Personal Details -->
+        <fieldset>
+            <legend>Patient Personal Information</legend>
+
+            <!-- Patient Name -->
+            <label>Patient Name:</label><br>
+            <input type="text" name="patient_name" placeholder="Enter Full Name" required autofocus minlength="3" maxlength="50">
+            <!-- required: Mandatory field -->
+            <!-- autofocus: Sets initial cursor focus to this field when loaded -->
+            <br><br>
+
+            <!-- Age -->
+            <label>Age:</label><br>
+            <input type="number" name="age" min="0" max="120" placeholder="Enter Age" required>
+            <!-- min/max: Ensures reasonable age values between 0 and 120 -->
+            <br><br>
+
+            <!-- Gender Selection using Radio Buttons -->
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label>
+            <!-- type="radio": Allows selection of only ONE option among elements sharing the same 'name' attribute -->
+            <br><br>
+
+            <!-- Blood Group Selection via Dropdown -->
+            <label>Blood Group:</label><br>
+            <select name="blood_group" required>
+                <option value="" disabled selected>-- Select Blood Group --</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+            </select>
+            <!-- <select>: Creates a standard drop-down menu -->
+            <br><br>
+
+            <!-- Contact Information -->
+            <label>Phone Number:</label><br>
+            <input type="tel" name="phone" placeholder="10 Digit Mobile Number" pattern="[0-9]{10}" required>
+            <!-- pattern="[0-9]{10}": Restricts input strictly to 10 digits -->
+            <br><br>
+
+            <label>Email Address:</label><br>
+            <input type="email" name="email" placeholder="patient@example.com" required>
+            <br><br>
+
+            <label>Address:</label><br>
+            <textarea name="address" rows="3" cols="40" placeholder="Enter Residential Address" required></textarea>
+            <!-- <textarea>: Multi-line text field for long form addresses -->
+            <br><br>
+
+            <label>Emergency Contact Number:</label><br>
+            <input type="tel" name="emergency_contact" placeholder="Emergency Phone Number" pattern="[0-9]{10}" required>
+            <br><br>
+
+        </fieldset>
+
+        <br>
+
+        <!-- Section 2: Appointment & Medical Details -->
+        <fieldset>
+            <legend>Appointment & Medical Details</legend>
+
+            <!-- Appointment Date & Time -->
+            <label>Appointment Date:</label><br>
+            <input type="date" name="appointment_date" required>
+            <br><br>
+
+            <label>Appointment Time:</label><br>
+            <input type="time" name="appointment_time" required>
+            <br><br>
+
+            <!-- Department with Search Auto-Suggest Datalist -->
+            <label>Department:</label><br>
+            <input list="department_list" name="department" placeholder="Search or Select Department" required>
+            <datalist id="department_list">
+                <option value="General Medicine">
+                <option value="Cardiology">
+                <option value="Orthopedics">
+                <option value="Pediatrics">
+                <option value="Neurology">
+                <option value="Dermatology">
+            </datalist>
+            <!-- <datalist>: Offers quick searchable suggestions for departments -->
+            <br><br>
+
+            <!-- Doctor Preference -->
+            <label>Doctor Preference:</label><br>
+            <input type="text" name="doctor_preference" placeholder="Doctor's Name (Optional)">
+            <br><br>
+
+            <!-- Existing Disease / Medical History -->
+            <label>Existing Disease / Medical History:</label><br>
+            <textarea name="existing_disease" rows="3" cols="40" placeholder="Specify any chronic conditions, allergies, or existing illness"></textarea>
+            <br><br>
+
+            <!-- Medical Report File Upload -->
+            <label>Medical Report Upload (PDF or Images):</label><br>
+            <input type="file" name="medical_report" accept="image/*, .pdf">
+            <!-- accept="image/*, .pdf": Limits upload choices strictly to image formats and PDF documents -->
+            <br><br>
+
+            <!-- Insurance Availability Toggle (Yes/No) -->
+            <label>Insurance Available:</label><br>
+            <input type="radio" id="ins_yes" name="insurance" value="Yes" required>
+            <label for="ins_yes">Yes</label>
+            <input type="radio" id="ins_no" name="insurance" value="No">
+            <label for="ins_no">No</label>
+            <br><br>
+
+        </fieldset>
+
+        <br>
+
+        <!-- Section 3: Declaration and Action Buttons -->
+        <!-- Terms and Conditions Checkbox -->
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the Terms & Conditions and declare that the information provided is accurate.</label>
+        <br><br>
+
+        <!-- Submit and Reset Buttons -->
+        <button type="submit">Submit Registration</button>
+        <button type="reset">Reset Form</button>
+
+    </form>
+
+</body>
+
+</html>
