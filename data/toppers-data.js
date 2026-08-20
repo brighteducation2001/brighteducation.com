@@ -40,14 +40,14 @@ const TOPPERS = [
 
   // ---------------- SCHOOL SECTION (Std VII-X) — Bright School ----------------
   { id:"khushi",       name:"Khushi",       photo:"images/students/khushi.jpeg",       category:"school", percent:83, marksLabel:null, rank:"1st",  scope:"in J.J.G.H. School", detail:"Std X · SSC", featured:true },
-  { id:"preeti-jjgh",  name:"Preeti",       photo:"images/students/preeti-jjgh.jpeg",  category:"school", percent:81, marksLabel:null, rank:"2nd",  scope:"in J.J.G.H. School", detail:"Std X · SSC", featured:false },
+  { id:"preeti-jjgh",  name:"Preeti",       photo:"images/students/preeti.jpeg",       category:"school", percent:81, marksLabel:null, rank:"2nd",  scope:"in J.J.G.H. School", detail:"Std X · SSC", featured:false },
   { id:"saroj",        name:"Saroj",        photo:"images/students/saroj.jpeg",        category:"school", percent:81, marksLabel:null, rank:"2nd",  scope:"in S.V.H. School",   detail:"Std X · SSC", featured:false },
   { id:"masoom",       name:"Masoom",       photo:"images/students/masoom.jpeg",       category:"school", percent:null, marksLabel:null, rank:"4th", scope:"in J.J.G.H. School", detail:"Std X · SSC", featured:false },
   { id:"ananya",       name:"Ananya",       photo:"images/students/ananya.jpeg",       category:"school", percent:null, marksLabel:null, rank:"5th", scope:"in J.J.G.H. School", detail:"Std X · SSC", featured:false },
   { id:"ayesha",       name:"Ayesha",       photo:"images/students/ayesha.jpeg",       category:"school", percent:null, marksLabel:null, rank:"6th", scope:"in Bright School", detail:"Std X", featured:false },
   { id:"nikhil",       name:"Nikhil",       photo:"images/students/nikhil.jpeg",       category:"school", percent:null, marksLabel:null, rank:"7th", scope:"in Bright School", detail:"Std X", featured:false },
   { id:"shivani",      name:"Shivani",      photo:"images/students/shivani.jpeg",      category:"school", percent:null, marksLabel:null, rank:"8th", scope:"in Bright School", detail:"Std X", featured:false },
-  { id:"preeti-bright",name:"Preeti S.",    photo:"images/students/preeti-bright.jpeg",category:"school", percent:null, marksLabel:null, rank:"9th", scope:"in Bright School", detail:"Std X", featured:false },
+  { id:"preeti-bright",name:"Preeti S.",    photo:"images/students/PreetiS.jpeg",      category:"school", percent:null, marksLabel:null, rank:"9th", scope:"in Bright School", detail:"Std X", featured:false },
   { id:"fatima",       name:"Fatima",       photo:"images/students/fatima.jpeg",       category:"school", percent:null, marksLabel:null, rank:"10th",scope:"in Bright School", detail:"Std X", featured:false },
   { id:"muskan",       name:"Muskan",       photo:"images/students/muskan.jpeg",       category:"school", percent:null, marksLabel:null, rank:"11th",scope:"in Bright School", detail:"Std X", featured:false },
   { id:"shoeb",        name:"Shoeb",        photo:"images/students/shoeb.jpeg",        category:"school", percent:null, marksLabel:null, rank:"12th",scope:"in Bright School", detail:"Std X", featured:false },
