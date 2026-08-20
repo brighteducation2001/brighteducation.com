@@ -81,7 +81,7 @@ const TOPPERS = [
   { id:"faizan",  name:"Khan Faizan",      photo:"images/students/faizan.jpeg",  category:"hsc", percent:88.83, marksLabel:"98 in Maths & IT", rank:"1st", scope:"in Bright School & Jr. College & N.J.B. College", detail:"XII Science · 533/600", featured:true },
   { id:"zikra",   name:"Khan Zikra Hiroz", photo:"images/students/zikra.jpeg",   category:"hsc", percent:84,    marksLabel:null,               rank:"1st", scope:"in Bright School & Jr. College & N.J.B. College", detail:"XII Commerce · 502/600", featured:true },
   { id:"mantasha",name:"Khan Mantasha",    photo:"images/students/mantasha.jpeg",category:"hsc", percent:null,  marksLabel:"95% in Mathematics",rank:"1st", scope:"in N.J.B. College — XII Science", detail:"XII Science", featured:false },
-  { id:"tahreen", name:"Khan Tahreen",     photo:null,                            category:"hsc", percent:87.5,  marksLabel:null,               rank:"1st", scope:"in Bright School & Jr. College, 4th in Swayam Siddhi College", detail:"XII Science", featured:false },
+  { id:"tahreen", name:"Khan Tahreen",     photo:"images/students/Tahreen.jpeg", category:"hsc", percent:87.5,  marksLabel:null,               rank:"1st", scope:"in Bright School & Jr. College, 4th in Swayam Siddhi College", detail:"XII Science", featured:false },
   { id:"sufiyan", name:"Sufiyan Hasim Khan",photo:"images/students/sufiyan.jpeg",category:"hsc", percent:null,  marksLabel:"82 in Biology",    rank:"Topper 2026", scope:"in Bright School & Jr. College", detail:"XII Science", featured:false },
 
   // ---------------- SUCCESS STORIES (Direct-entry board passes) ----------------
